@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -17,4 +17,5 @@ import { QuestionPage } from './question.page';
   ],
   declarations: [QuestionPage]
 })
-export class QuestionPageModule {}
+export class QuestionPageModule{
+}

@@ -33,4 +33,8 @@ export class DataService {
       correct: 3
     })
   }
+
+  public getQuestion(id: string): Question {
+      return this.currentQuiz.questions.find(q => q.id === id);
+  }
 }

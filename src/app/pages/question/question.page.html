@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>question</ion-title>
+    <ion-buttons>
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Frage {{question.id}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+<ion-list>
+  <ion-item>
+    <ion-label>Frage:</ion-label>
+    <ion-label>{{question.id}}</ion-label>
+  </ion-item>
+</ion-list>
 </ion-content>

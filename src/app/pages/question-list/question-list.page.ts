@@ -14,7 +14,7 @@ export class QuestionListPage implements OnInit {
 
   ngOnInit() {
   }
-  show(id: string){
-    this.route.navigate(['/question']);
+  show(id){
+    this.route.navigate(['/question/', id]);
   }
 }

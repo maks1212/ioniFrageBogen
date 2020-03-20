@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/question-list/question-list.module').then( m => m.QuestionListPageModule)
   },
   {
-    path: 'question',
+    path: 'question/:id',
     loadChildren: () => import('./pages/question/question.module').then( m => m.QuestionPageModule)
   },
 ];
