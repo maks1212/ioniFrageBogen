@@ -21,6 +21,16 @@ export class DataService {
       answerThree: '3',
       answerFour: '4',
       correct: 4
+    });
+
+    this.currentQuiz.questions.push({
+      id: '2',
+      title: 'was is 2 x 3',
+      answerOne: '1',
+      answerTwo: '2',
+      answerThree: '6',
+      answerFour: '4',
+      correct: 3
     })
   }
 }
