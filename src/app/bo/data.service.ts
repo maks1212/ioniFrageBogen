@@ -1,9 +1,26 @@
 import { Injectable } from '@angular/core';
+import {Question, Quiz} from "./interfaces";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  constructor() { }
+  public currentQuiz: Quiz = {
+    id: '',
+    quizName: 'Maks Quiz',
+    questions: []
+  } ;
+
+  constructor() {
+    this.currentQuiz.questions.push({
+      id: '1',
+      title: 'was is 2 x 2',
+      answerOne: '1',
+      answerTwo: '2',
+      answerThree: '3',
+      answerFour: '4',
+      correct: 4
+    })
+  }
 }

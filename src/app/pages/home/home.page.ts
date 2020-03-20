@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {DataService} from "../../bo/data.service";
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
 
+  constructor(public data: DataService,
+              public navCtrl: NavController) {
+    console.log(data.currentQuiz);
+  }
+
+  public showList() {
+      this.navCtrl.navigateForward(['/question-list'])
+  }
 }
